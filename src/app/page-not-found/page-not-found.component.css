@@ -1,0 +1,21 @@
+img{
+    width: 30em;
+    border-radius: 1em;
+}
+h1{
+    border-radius: 0.2em;
+    width:max-content;
+    
+}
+/* .mainbox {
+    background-color: #95d4fc;
+     margin: auto;
+    margin-top: 1.6em;
+    
+    height: 600px;
+    width: 600px;
+    position: relative;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em black;
+  }
+  */
