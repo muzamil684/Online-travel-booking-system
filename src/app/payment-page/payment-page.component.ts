@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-payment-page',
   templateUrl: './payment-page.component.html',
   styleUrls: ['./payment-page.component.css']
 })
-export class PaymentPageComponent implements OnInit {
-
+export class PaymentPageComponent {
+  
+  users=[];
+  
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ 
+  addUserData(ref){
+    let UserObj=ref.value;
+    console.log(UserObj);
+    this.users=UserObj;
+    ref.reset();
+ }
 
 }

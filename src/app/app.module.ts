@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BengaluruComponent } from './bengaluru/bengaluru.component';
 import { ChennaiComponent } from './chennai/chennai.component';
 import { HotelsPageIComponent } from './hotels-page-i/hotels-page-i.component';
+import { PrintComponent } from './print/print.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HotelsPageIComponent } from './hotels-page-i/hotels-page-i.component';
     BengaluruComponent,
     ChennaiComponent,
     HotelsPageIComponent,
+    PrintComponent,
    
   ],
   imports: [

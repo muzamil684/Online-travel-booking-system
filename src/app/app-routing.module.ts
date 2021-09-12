@@ -12,28 +12,25 @@ import { TrainsComponent } from './trains/trains.component';
 import { BengaluruComponent } from './bengaluru/bengaluru.component';
 import { ChennaiComponent } from './chennai/chennai.component';
 import { HotelsPageIComponent } from './hotels-page-i/hotels-page-i.component';
+import { PrintComponent } from './print/print.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'flights',component:FlightsComponent},
   {path:'trains',component:TrainsComponent},
-
-
-     {path:'hotels',component:HotelsComponent,
+  {path:'hotels',component:HotelsComponent,
      children:[
          {path:'Bengaluru',component:BengaluruComponent},
         {path:'Chennai',component:ChennaiComponent},
         {path:':id',component:HotelsPageIComponent}
          
      ]},
-   
-
   
-  
-    
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
-  {path:'payment-page',component:PaymentPageComponent},
+  {path:'payment-page',component:PaymentPageComponent,children:[
+    {path:'print',component:PrintComponent}
+  ]},
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'**',component:PageNotFoundComponent} 
 ];

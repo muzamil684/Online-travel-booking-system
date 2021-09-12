@@ -6,6 +6,9 @@ input[id=cl]{
     border: 1px solid rgb(148, 148, 148);
     
 }
+label[id=citylabel]{
+    font-size: 2em;
+}
 
 
 .container{
@@ -21,6 +24,7 @@ padding: 1em;
 margin: 1px;
 background-color: rgb(163, 205, 245);
 min-width: 200px;
+width: 500px;
 }
 
 
