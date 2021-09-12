@@ -31,7 +31,7 @@
         <div class="cut cut-3"></div>
         <label for="firstname" class="placeholder">Enter UPI ID</label>
       </div>
-      <button type="submit" class="submit" [routerLink]="['/payment-page/print']" routerLinkActive="router-link-active" >submit</button>
+      <button type="submit" class="submit" [routerLink]="['/payment-page/print-receipt']" routerLinkActive="router-link-active" >submit</button>
     </form>
     
     
@@ -39,4 +39,4 @@
 
 
 
-    <app-print  [dataFromParent]="users"></app-print>
+    <app-print-receipt  [dataFromParent]="users"></app-print-receipt>

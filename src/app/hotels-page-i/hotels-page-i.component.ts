@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DdataService } from '../ddata.service';
 import { m_hotels } from '../MODELS/hotels.model';
 
@@ -10,10 +10,12 @@ import { m_hotels } from '../MODELS/hotels.model';
 })
 export class HotelsPageIComponent implements OnInit {
 
+
+
 hotelsPageObj:m_hotels;
 
 //to read id from url we use activated route 
-  constructor(private ar:ActivatedRoute,private dds:DdataService) { }
+  constructor(private ar:ActivatedRoute,private dds:DdataService, private router:Router) { }
 
   ngOnInit(): void {
    let id=this.ar.snapshot.params.id;
@@ -30,6 +32,14 @@ console.log(id);
      }
    )
 
+ 
+
+
   }
+  
+ // onSelectionId(id){
+ //   console.log(this.hotelsPageObj.id);
+  //  this.router.navigateByUrl()
+ // }
 
 }
