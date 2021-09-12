@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
-import { FooterComponent } from './footer/footer.component';
 import { BengaluruComponent } from './bengaluru/bengaluru.component';
 import { ChennaiComponent } from './chennai/chennai.component';
 import { HotelsPageIComponent } from './hotels-page-i/hotels-page-i.component';
@@ -21,7 +20,6 @@ import { PrintReceiptComponent } from './print-receipt/print-receipt.component';
     HotelsComponent,
     PageNotFoundComponent,
     PaymentPageComponent,
-    FooterComponent,
     BengaluruComponent,
     ChennaiComponent,
     HotelsPageIComponent,
